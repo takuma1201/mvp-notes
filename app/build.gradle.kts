@@ -5,14 +5,14 @@ plugins {
 }
 
 android {
-    namespace = "com.example.clisampleapp"
+    namespace = "com.takuma.mvpnotes"
     compileSdk = 36
     defaultConfig {
-        applicationId = "com.example.clisampleapp"
+        applicationId = "com.takuma.mvpnotes"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
-        versionName = "1.0"
+        versionName = "0.1.0"
     }
 
     buildTypes {

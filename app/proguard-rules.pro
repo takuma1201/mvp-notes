@@ -11,4 +11,4 @@
 }
 
 # App models
--keep class com.example.clisampleapp.model.** { *; }
+-keep class com.takuma.mvpnotes.model.** { *; }

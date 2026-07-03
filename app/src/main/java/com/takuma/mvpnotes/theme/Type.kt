@@ -1,4 +1,4 @@
-package com.example.clisampleapp.theme
+package com.takuma.mvpnotes.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

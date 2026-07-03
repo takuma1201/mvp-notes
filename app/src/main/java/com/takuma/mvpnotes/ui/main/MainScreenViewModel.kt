@@ -1,9 +1,9 @@
-package com.example.clisampleapp.ui.main
+package com.takuma.mvpnotes.ui.main
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.clisampleapp.data.ItemRepository
-import com.example.clisampleapp.model.Item
+import com.takuma.mvpnotes.data.ItemRepository
+import com.takuma.mvpnotes.model.Item
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

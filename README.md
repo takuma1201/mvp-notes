@@ -81,14 +81,16 @@ MainActivity
 - **`app-release-unsigned.apk`** は未署名のため、そのままでは端末にインストールできません。ビルド成果物の確認用です。
 - **`app-release.apk`** は debug キーで署名したローカル検証用です。**Google Play への公開には使用しないでください。**
 - **Play 公開** には release keystore を用意し、`app/build.gradle.kts` に本番用 `signingConfigs` を設定する必要があります。
-- パッケージ名は `com.example.clisampleapp` です（MVP 段階のため変更していません）。
+- パッケージ変更後はアプリデータが別扱いになり、以前の DataStore データは引き継がれません。
 
 ## プロジェクト情報
 
 | 項目 | 値 |
 |------|-----|
 | アプリ名 | MVP Notes |
-| applicationId | `com.example.clisampleapp` |
+| applicationId | `com.takuma.mvpnotes` |
+| namespace | `com.takuma.mvpnotes` |
 | minSdk | 24 |
 | targetSdk | 36 |
-| versionName | 1.0 |
+| versionCode | 1 |
+| versionName | 0.1.0 |

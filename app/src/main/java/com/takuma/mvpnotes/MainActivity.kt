@@ -1,4 +1,4 @@
-package com.example.clisampleapp
+package com.takuma.mvpnotes
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,8 +11,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.clisampleapp.theme.CliSampleAppTheme
-import com.example.clisampleapp.ui.main.MainScreen
+import com.takuma.mvpnotes.theme.MvpNotesTheme
+import com.takuma.mvpnotes.ui.main.MainScreen
 
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
 
     enableEdgeToEdge()
     setContent {
-      CliSampleAppTheme {
+      MvpNotesTheme {
         Surface(
           modifier = Modifier.fillMaxSize(),
           color = MaterialTheme.colorScheme.background,

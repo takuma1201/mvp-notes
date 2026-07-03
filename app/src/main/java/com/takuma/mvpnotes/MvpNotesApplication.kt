@@ -1,10 +1,10 @@
-package com.example.clisampleapp
+package com.takuma.mvpnotes
 
 import android.app.Application
-import com.example.clisampleapp.data.DataStoreItemRepository
-import com.example.clisampleapp.data.ItemRepository
+import com.takuma.mvpnotes.data.DataStoreItemRepository
+import com.takuma.mvpnotes.data.ItemRepository
 
-class CliSampleAppApplication : Application() {
+class MvpNotesApplication : Application() {
   lateinit var itemRepository: ItemRepository
     private set
 

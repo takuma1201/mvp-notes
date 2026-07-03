@@ -1,4 +1,4 @@
-package com.example.clisampleapp.theme
+package com.takuma.mvpnotes.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,4 +1,4 @@
-package com.example.clisampleapp.theme
+package com.takuma.mvpnotes.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -30,7 +30,7 @@ private val LightColorScheme =
   )
 
 @Composable
-fun CliSampleAppTheme(
+fun MvpNotesTheme(
   darkTheme: Boolean = isSystemInDarkTheme(),
   // Dynamic color is available on Android 12+
   dynamicColor: Boolean = true,

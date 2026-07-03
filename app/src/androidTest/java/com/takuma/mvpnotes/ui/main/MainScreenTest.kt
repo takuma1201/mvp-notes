@@ -1,10 +1,10 @@
-package com.example.clisampleapp.ui.main
+package com.takuma.mvpnotes.ui.main
 
 import androidx.activity.ComponentActivity
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithText
-import com.example.clisampleapp.model.Item
-import com.example.clisampleapp.theme.CliSampleAppTheme
+import com.takuma.mvpnotes.model.Item
+import com.takuma.mvpnotes.theme.MvpNotesTheme
 import org.junit.Rule
 import org.junit.Test
 
@@ -16,7 +16,7 @@ class MainScreenTest {
   @Test
   fun mainScreenContent_showsTitleAddButtonAndItems() {
     composeTestRule.setContent {
-      CliSampleAppTheme {
+      MvpNotesTheme {
         MainScreenContent(
           state =
             MainScreenUiState(
@@ -41,7 +41,7 @@ class MainScreenTest {
   @Test
   fun mainScreenContent_withNoItems_showsEmptyState() {
     composeTestRule.setContent {
-      CliSampleAppTheme {
+      MvpNotesTheme {
         MainScreenContent(
           state = MainScreenUiState(),
           onInputChange = {},
@@ -59,7 +59,7 @@ class MainScreenTest {
   @Test
   fun mainScreenContent_inEditMode_showsSaveAndCancel() {
     composeTestRule.setContent {
-      CliSampleAppTheme {
+      MvpNotesTheme {
         MainScreenContent(
           state =
             MainScreenUiState(

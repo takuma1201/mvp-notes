@@ -12,6 +12,6 @@ if [ ! -f "$APK" ]; then
 fi
 
 adb install -r "$APK"
-adb shell am start -n com.example.clisampleapp/.MainActivity
+adb shell am start -n com.takuma.mvpnotes/.MainActivity
 
 echo "Installed release APK: $APK"

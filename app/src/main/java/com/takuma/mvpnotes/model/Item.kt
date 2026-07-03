@@ -1,4 +1,4 @@
-package com.example.clisampleapp.model
+package com.takuma.mvpnotes.model
 
 import kotlinx.serialization.Serializable
 

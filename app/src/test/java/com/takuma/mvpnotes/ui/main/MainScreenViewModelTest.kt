@@ -1,6 +1,6 @@
-package com.example.clisampleapp.ui.main
+package com.takuma.mvpnotes.ui.main
 
-import com.example.clisampleapp.data.FakeItemRepository
+import com.takuma.mvpnotes.data.FakeItemRepository
 import junit.framework.TestCase.assertEquals
 import junit.framework.TestCase.assertNull
 import kotlinx.coroutines.Dispatchers

@@ -1,6 +1,6 @@
-package com.example.clisampleapp.data
+package com.takuma.mvpnotes.data
 
-import com.example.clisampleapp.model.Item
+import com.takuma.mvpnotes.model.Item
 import kotlinx.coroutines.flow.Flow
 
 interface ItemRepository {

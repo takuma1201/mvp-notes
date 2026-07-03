@@ -1,4 +1,4 @@
-package com.example.clisampleapp.ui.main
+package com.takuma.mvpnotes.ui.main
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
@@ -32,10 +32,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.clisampleapp.CliSampleAppApplication
-import com.example.clisampleapp.R
-import com.example.clisampleapp.model.Item
-import com.example.clisampleapp.theme.CliSampleAppTheme
+import com.takuma.mvpnotes.MvpNotesApplication
+import com.takuma.mvpnotes.R
+import com.takuma.mvpnotes.model.Item
+import com.takuma.mvpnotes.theme.MvpNotesTheme
 
 @Composable
 fun MainScreen(
@@ -44,7 +44,7 @@ fun MainScreen(
     viewModel(
       factory =
         MainScreenViewModelFactory(
-          (LocalContext.current.applicationContext as CliSampleAppApplication).itemRepository,
+          (LocalContext.current.applicationContext as MvpNotesApplication).itemRepository,
         ),
     ),
 ) {
@@ -236,7 +236,7 @@ private fun ItemCard(
 @Preview(showBackground = true, widthDp = 360)
 @Composable
 fun MainScreenPreview() {
-  CliSampleAppTheme {
+  MvpNotesTheme {
     MainScreenContent(
       state = MainScreenUiState(items = listOf(Item(id = 0L, text = "Sample item"))),
       onInputChange = {},
@@ -252,7 +252,7 @@ fun MainScreenPreview() {
 @Preview(showBackground = true, widthDp = 360)
 @Composable
 fun MainScreenEmptyPreview() {
-  CliSampleAppTheme {
+  MvpNotesTheme {
     MainScreenContent(
       state = MainScreenUiState(),
       onInputChange = {},
@@ -268,7 +268,7 @@ fun MainScreenEmptyPreview() {
 @Preview(showBackground = true, widthDp = 360)
 @Composable
 fun MainScreenEditPreview() {
-  CliSampleAppTheme {
+  MvpNotesTheme {
     MainScreenContent(
       state =
         MainScreenUiState(

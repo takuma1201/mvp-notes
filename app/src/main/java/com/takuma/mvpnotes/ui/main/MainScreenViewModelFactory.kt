@@ -1,8 +1,8 @@
-package com.example.clisampleapp.ui.main
+package com.takuma.mvpnotes.ui.main
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.clisampleapp.data.ItemRepository
+import com.takuma.mvpnotes.data.ItemRepository
 
 class MainScreenViewModelFactory(
   private val itemRepository: ItemRepository,
