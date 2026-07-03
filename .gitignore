@@ -1,0 +1,27 @@
+# Gradle
+.gradle/
+build/
+app/build/
+
+# Local configuration
+local.properties
+keystore.properties
+
+# Android Studio / IntelliJ IDEA
+*.iml
+.idea/
+
+# macOS
+.DS_Store
+
+# Android
+/captures
+.externalNativeBuild
+.cxx
+
+# Signing secrets
+*.jks
+*.keystore
+
+# Cursor
+.cursor/

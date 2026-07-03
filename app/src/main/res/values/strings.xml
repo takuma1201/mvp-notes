@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MVP Notes</string>
+    <string name="main_title">MVP Notes</string>
+    <string name="main_description">A simple local notes MVP built with Cursor + Android CLI</string>
+</resources>
